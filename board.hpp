@@ -79,7 +79,6 @@ std::string Board<N>::toString()
     auto horizontal = dimension_ * 4 - 1;
     
     for(auto y = 1; y <= dimension_; y++) {
-        
         for(auto x = 1; x <= dimension_; x++) {
             auto value = boardstate_[coordToIdx(x, y)];
             output << " " << value << " ";

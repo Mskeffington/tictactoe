@@ -9,7 +9,7 @@
 using namespace std;
 
 static auto running = true;
-#define DEFAULT_BOARD_DIMENSION 4
+#define DEFAULT_BOARD_DIMENSION 3
 
 void print(const std::string& m)
 {
@@ -56,9 +56,9 @@ int main()
         auto output = tttBoard.toString();
         mvprintw(1, 0, output.c_str());
         
-        auto winner = tttBoard.winner();
         // check for the winner
-        if(winner == tictactoe::Player::X) {
+        auto winner = tttBoard.winner();
+        if(winner != tictactoe::Player::NONE) {
             stringstream winMsg;
             winMsg << winner << " Wins! Press the any key to quit.";
             print(winMsg.str().c_str());
@@ -123,8 +123,8 @@ int main()
             }
         }
         refresh();
+        // this random sleep helps even out the rendering so its not super choppy.
         usleep(300);
-
     }
     
     endwin();

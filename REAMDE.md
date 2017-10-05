@@ -1,0 +1,3 @@
+Apparently, theres some code test where you are given 1 hour to complete an implementation of Tic Tac Toe.  Based on this you are sorted and the recruiter gives you interviews appropriate to your skill set.  I did not do this for that reason, simply because it was an interesting challenge.  However I got side-tracked screwing around with NxN sized game grids and ncurses so this implementation took me several hours.  However, its kind of a fun console game so here it is...
+
+Also, the AI logic will tie 100% of the time. (on 3x3 anyway)

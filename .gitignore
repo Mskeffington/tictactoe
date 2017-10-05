@@ -1,4 +1,4 @@
-*.kdev
+*.kdev4
 build/
 obj/
 *.o
@@ -7,3 +7,4 @@ obj/
 tictactoe
 ~*
 *.swp
+.*
