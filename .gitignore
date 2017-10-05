@@ -1,0 +1,9 @@
+*.kdev
+build/
+obj/
+*.o
+*.a
+*.so
+tictactoe
+~*
+*.swp
